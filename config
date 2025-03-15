@@ -192,4 +192,7 @@ bar {
 #exec --nostartup-id compton
 exec_always --no-startup-id picom -b
 
-#for_window [class=".*"] fullscreen enable
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id setxkbmap -option ctrl:swapcaps
+
+for_window [class="^.*"] border pixel 0
